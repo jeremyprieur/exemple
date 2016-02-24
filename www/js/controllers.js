@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope, $state, $ionicHistory, $cordovaTouchID, $ionicPlatform) {
 
   $ionicHistory.clearHistory();
-console.log('test');
+
   $ionicPlatform.ready(function() {
         $cordovaTouchID.checkSupport().then(function() {
             $cordovaTouchID.authenticate("You must authenticate").then(function() {

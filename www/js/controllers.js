@@ -1,10 +1,11 @@
 angular.module('starter.controllers', [])
 
 
-.controller('HomeCtrl', function($scope, $state, $ionicHistory, $cordovaTouchID, $ionicPlatform) {
+.controller('HomeCtrl', function($scope, $state, $ionicHistory) {
 
   $ionicHistory.clearHistory();
 
+<<<<<<< HEAD
   $cordovaTouchID.checkSupport().then(function() {
       $cordovaTouchID.authenticate("You must authenticate").then(function() {
           alert("The authentication was successful");
@@ -15,6 +16,8 @@ angular.module('starter.controllers', [])
       alert(JSON.stringify(error));
   });
 
+=======
+>>>>>>> parent of 8c4ba88... add iOS platform & touch id auth
   $scope.newParty = function (id) {
       $state.go('newParty');
   };

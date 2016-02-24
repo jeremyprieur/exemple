@@ -8,12 +8,12 @@ angular.module('starter.controllers', [])
   $ionicPlatform.ready(function() {
         $cordovaTouchID.checkSupport().then(function() {
             $cordovaTouchID.authenticate("You must authenticate").then(function() {
-                alert("The authentication was successful");
+                //alert("The authentication was successful");
             }, function(error) {
-                alert(JSON.stringify(error));
+                //alert(JSON.stringify(error));
             });
         }, function(error) {
-            alert(JSON.stringify(error));
+            //alert(JSON.stringify(error));
         });
     });
 

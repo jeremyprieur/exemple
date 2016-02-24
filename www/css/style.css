@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+.box{
+	height: 100%;
+	width: 100%;
+}
+.blue{
+	background: linear-gradient(to left,  #000 0%,red 100%);
+}
+.yellow{
+	background-color: #000;
+}
+.pink{
+	background: linear-gradient(to right,  #000 0%,green 100%);
+}
+.scroll{
+	height: 100%;
+	width: 100%;
+}
+.slider{
+	height: 100%;
+	width: 100%;
+}
+p{
+	padding: 50px 50px 0 50px;
+	text-align: justify;
+	color: #fff;
+}

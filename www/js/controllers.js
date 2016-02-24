@@ -2,7 +2,8 @@ angular.module('starter.controllers', [])
 
 
 .controller('HomeCtrl', function($scope, $state, $ionicHistory, $cordovaTouchID, $ionicPlatform) {
-
+console.log('test');
+console.log('test2');
   $ionicHistory.clearHistory();
 
   $ionicPlatform.ready(function() {

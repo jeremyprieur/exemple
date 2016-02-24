@@ -5,17 +5,15 @@ angular.module('starter.controllers', [])
 
   $ionicHistory.clearHistory();
 
-  $ionicPlatform.ready(function() {
-        $cordovaTouchID.checkSupport().then(function() {
-            $cordovaTouchID.authenticate("You must authenticate").then(function() {
-                alert("The authentication was successful");
-            }, function(error) {
-                alert(JSON.stringify(error));
-            });
-        }, function(error) {
-            alert(JSON.stringify(error));
-        });
-    });
+  $cordovaTouchID.checkSupport().then(function() {
+      $cordovaTouchID.authenticate("You must authenticate").then(function() {
+          alert("The authentication was successful");
+      }, function(error) {
+          alert(JSON.stringify(error));
+      });
+  }, function(error) {
+      alert(JSON.stringify(error));
+  });
 
   $scope.newParty = function (id) {
       $state.go('newParty');
